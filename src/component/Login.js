@@ -48,7 +48,6 @@ class login extends Component {
     if (this.props.isLoggedIn) {
       return <Redirect to="/" />;
     }
-    console.log("State ====> ", this.state.unSavedUser);
     return (
       <div>
         <h1>Sign In</h1>
