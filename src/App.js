@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignUp from "./component/SignUp";
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  console.log("isLoggedIn ===>", isLoggedIn);
   return (
     <div className="container">
       <Router>

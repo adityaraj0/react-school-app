@@ -6,3 +6,4 @@ Day 1 (28/09/21):
 - Login Component added with user login validation
 - Git repo created
 - Code pushed in new repo branch
+- Removed unnessacery code
