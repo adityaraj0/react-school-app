@@ -5,10 +5,6 @@ class login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      savedUser: {
-        email: "adityaraj@gmail.com",
-        password: "aditya",
-      },
       unSavedUser: {
         email: "",
         password: "",
@@ -19,7 +15,9 @@ class login extends Component {
   }
 
   verifyUser() {
-    const { savedUser, unSavedUser } = this.state;
+    const { unSavedUser } = this.state;
+    const savedUser = this.props.userData;
+
     if (
       savedUser.email === unSavedUser.email &&
       savedUser.password === unSavedUser.password
@@ -73,7 +71,7 @@ class login extends Component {
             Login
           </button>
           <br />
-          <Link exact to="/SignUp">
+          <Link exact to="/signup">
             SignUp
           </Link>
         </form>
